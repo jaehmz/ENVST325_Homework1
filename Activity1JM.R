@@ -43,6 +43,20 @@ highPeaks[1,3]
 SnowDepth = c(2.5,3,5,4.5)
 # convert depth in inches to centimeters
 SnowDepth*2.54
-
-
+# Table conversion
+# Naming the difficult peaks
+DiffPeaksName =c("Mount Haystack", "Mount Skylight", "Dix Mountain", "Gray Peak")
+# Difficult Peaks Elevation
+DiffPeaksElev = c(4960,4926,4857,4840)
+# Difficult Peaks Climb Ascent
+DiffPeaksClimb = c(3570, 4265, 2800, 4178)
+# Difficult Peaks Round Trip Length
+DiffPeaksTrip = c(17.8, 17.9, 13.2, 16)
+# Entering the Difficult Peaks Info Into a Dataframe
+DiffPeaks = data.frame (elev = DiffPeaksElev,
+                        name = DiffPeaksName,
+                        prom = DiffPeaksClimb,
+                        trip = DiffPeaksTrip )
+# Conversion of Celsius to Fahrenheit
+                        
 # Homework ----
