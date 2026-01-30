@@ -43,6 +43,7 @@ highPeaks[1,3]
 SnowDepth = c(2.5,3,5,4.5)
 # convert depth in inches to centimeters
 SnowDepth*2.54
+
 # Table conversion
 # Naming the difficult peaks
 DiffPeaksName =c("Mount Haystack", "Mount Skylight", "Dix Mountain", "Gray Peak")
@@ -57,6 +58,47 @@ DiffPeaks = data.frame (elev = DiffPeaksElev,
                         name = DiffPeaksName,
                         prom = DiffPeaksClimb,
                         trip = DiffPeaksTrip )
+
 # Conversion of Celsius to Fahrenheit
-                        
+# Initial Celsius temps
+cTemps = c(-44,0,20,35)
+# Formula converting each temp
+fTemps = (9/5) * cTemps + 32
+# Checking conversion temps (Fahrenheit)
+fTemps
+
 # Homework ----
+
+# Question 1
+
+# Conversion of elevation of feet into meters 
+DiffPeaks$elev_m = DiffPeaks$elev * 0.3048
+DiffPeaks
+
+
+
+
+# Question 2
+# Answer on word file
+
+
+
+
+# Question 3
+# Finding the trip with the longest route
+DiffPeaks[2,4]
+
+
+
+
+
+# Question 4
+
+
+
+
+
+
+
+
+
